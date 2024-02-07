@@ -10,7 +10,7 @@ type Set = M.Map Color Int
 
 main = do
   contents <- getContents
-  let games = fst . head $ readP_to_S parseFile contents
+  let (games, _):_ = readP_to_S parseFile contents
   putStr "part 1: "
   print $ sum . map fst . filter (possible . snd) $ games
   putStr "part 2: "
