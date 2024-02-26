@@ -18,7 +18,7 @@ input =
     sepBy line (char '\n') <*
     char '\n' <*
     eof
-    
+
 line = sepBy number (char ' ')
 
 number :: ReadP Int

@@ -1,11 +1,8 @@
 import Text.ParserCombinators.ReadP
-import Data.Maybe
 import Data.List
-import System.IO
 import Data.Ord
 import Data.Semigroup
 import Data.Char as C ( isDigit )
-import GHC.Float (int2Float)
 import qualified Data.Map as M
 
 data HandType = High | One | Two | Three | Full | Four | Five deriving (Eq, Ord, Enum, Show)
